@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		925EF70918171635008A0A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925EF70818171635008A0A5B /* Foundation.framework */; };
+		925EF70B18171635008A0A5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925EF70A18171635008A0A5B /* CoreGraphics.framework */; };
+		925EF70D18171635008A0A5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925EF70C18171635008A0A5B /* UIKit.framework */; };
+		925EF71318171635008A0A5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 925EF71118171635008A0A5B /* InfoPlist.strings */; };
+		925EF71518171635008A0A5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 925EF71418171635008A0A5B /* main.m */; };
+		925EF71918171635008A0A5B /* THAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 925EF71818171635008A0A5B /* THAppDelegate.m */; };
+		925EF71F18171635008A0A5B /* THViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925EF71E18171635008A0A5B /* THViewController.m */; };
+		925EF72818171635008A0A5B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925EF72718171635008A0A5B /* XCTest.framework */; };
+		925EF72918171635008A0A5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925EF70818171635008A0A5B /* Foundation.framework */; };
+		925EF72A18171635008A0A5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925EF70C18171635008A0A5B /* UIKit.framework */; };
+		925EF73218171635008A0A5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 925EF73018171635008A0A5B /* InfoPlist.strings */; };
+		925EF73418171635008A0A5B /* THProgressView_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 925EF73318171635008A0A5B /* THProgressView_DemoTests.m */; };
+		925EF740181716DA008A0A5B /* THProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 925EF73F181716DA008A0A5B /* THProgressView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		925EF72B18171635008A0A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925EF6FD18171635008A0A5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 925EF70418171635008A0A5B;
+			remoteInfo = "THProgressView-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		925EF70518171635008A0A5B /* THProgressView-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "THProgressView-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		925EF70818171635008A0A5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		925EF70A18171635008A0A5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		925EF70C18171635008A0A5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		925EF71018171635008A0A5B /* THProgressView-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THProgressView-Demo-Info.plist"; sourceTree = "<group>"; };
+		925EF71218171635008A0A5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		925EF71418171635008A0A5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		925EF71618171635008A0A5B /* THProgressView-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THProgressView-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		925EF71718171635008A0A5B /* THAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAppDelegate.h; sourceTree = "<group>"; };
+		925EF71818171635008A0A5B /* THAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAppDelegate.m; sourceTree = "<group>"; };
+		925EF71D18171635008A0A5B /* THViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THViewController.h; sourceTree = "<group>"; };
+		925EF71E18171635008A0A5B /* THViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THViewController.m; sourceTree = "<group>"; };
+		925EF72618171635008A0A5B /* THProgressView-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "THProgressView-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		925EF72718171635008A0A5B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		925EF72F18171635008A0A5B /* THProgressView-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "THProgressView-DemoTests-Info.plist"; sourceTree = "<group>"; };
+		925EF73118171635008A0A5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		925EF73318171635008A0A5B /* THProgressView_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THProgressView_DemoTests.m; sourceTree = "<group>"; };
+		925EF73E181716DA008A0A5B /* THProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THProgressView.h; path = ../THProgressView/THProgressView.h; sourceTree = "<group>"; };
+		925EF73F181716DA008A0A5B /* THProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THProgressView.m; path = ../THProgressView/THProgressView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		925EF70218171635008A0A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925EF70B18171635008A0A5B /* CoreGraphics.framework in Frameworks */,
+				925EF70D18171635008A0A5B /* UIKit.framework in Frameworks */,
+				925EF70918171635008A0A5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925EF72318171635008A0A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925EF72818171635008A0A5B /* XCTest.framework in Frameworks */,
+				925EF72A18171635008A0A5B /* UIKit.framework in Frameworks */,
+				925EF72918171635008A0A5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		925EF6FC18171635008A0A5B = {
+			isa = PBXGroup;
+			children = (
+				925EF73D181716C1008A0A5B /* THProgressView */,
+				925EF70E18171635008A0A5B /* THProgressView-Demo */,
+				925EF72D18171635008A0A5B /* THProgressView-DemoTests */,
+				925EF70718171635008A0A5B /* Frameworks */,
+				925EF70618171635008A0A5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		925EF70618171635008A0A5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				925EF70518171635008A0A5B /* THProgressView-Demo.app */,
+				925EF72618171635008A0A5B /* THProgressView-DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		925EF70718171635008A0A5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				925EF70818171635008A0A5B /* Foundation.framework */,
+				925EF70A18171635008A0A5B /* CoreGraphics.framework */,
+				925EF70C18171635008A0A5B /* UIKit.framework */,
+				925EF72718171635008A0A5B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		925EF70E18171635008A0A5B /* THProgressView-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				925EF71718171635008A0A5B /* THAppDelegate.h */,
+				925EF71818171635008A0A5B /* THAppDelegate.m */,
+				925EF71D18171635008A0A5B /* THViewController.h */,
+				925EF71E18171635008A0A5B /* THViewController.m */,
+				925EF70F18171635008A0A5B /* Supporting Files */,
+			);
+			path = "THProgressView-Demo";
+			sourceTree = "<group>";
+		};
+		925EF70F18171635008A0A5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				925EF71018171635008A0A5B /* THProgressView-Demo-Info.plist */,
+				925EF71118171635008A0A5B /* InfoPlist.strings */,
+				925EF71418171635008A0A5B /* main.m */,
+				925EF71618171635008A0A5B /* THProgressView-Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		925EF72D18171635008A0A5B /* THProgressView-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				925EF73318171635008A0A5B /* THProgressView_DemoTests.m */,
+				925EF72E18171635008A0A5B /* Supporting Files */,
+			);
+			path = "THProgressView-DemoTests";
+			sourceTree = "<group>";
+		};
+		925EF72E18171635008A0A5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				925EF72F18171635008A0A5B /* THProgressView-DemoTests-Info.plist */,
+				925EF73018171635008A0A5B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		925EF73D181716C1008A0A5B /* THProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				925EF73E181716DA008A0A5B /* THProgressView.h */,
+				925EF73F181716DA008A0A5B /* THProgressView.m */,
+			);
+			name = THProgressView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		925EF70418171635008A0A5B /* THProgressView-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925EF73718171635008A0A5B /* Build configuration list for PBXNativeTarget "THProgressView-Demo" */;
+			buildPhases = (
+				925EF70118171635008A0A5B /* Sources */,
+				925EF70218171635008A0A5B /* Frameworks */,
+				925EF70318171635008A0A5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "THProgressView-Demo";
+			productName = "THProgressView-Demo";
+			productReference = 925EF70518171635008A0A5B /* THProgressView-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		925EF72518171635008A0A5B /* THProgressView-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925EF73A18171635008A0A5B /* Build configuration list for PBXNativeTarget "THProgressView-DemoTests" */;
+			buildPhases = (
+				925EF72218171635008A0A5B /* Sources */,
+				925EF72318171635008A0A5B /* Frameworks */,
+				925EF72418171635008A0A5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				925EF72C18171635008A0A5B /* PBXTargetDependency */,
+			);
+			name = "THProgressView-DemoTests";
+			productName = "THProgressView-DemoTests";
+			productReference = 925EF72618171635008A0A5B /* THProgressView-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		925EF6FD18171635008A0A5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TH;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tiago Henriques";
+				TargetAttributes = {
+					925EF72518171635008A0A5B = {
+						TestTargetID = 925EF70418171635008A0A5B;
+					};
+				};
+			};
+			buildConfigurationList = 925EF70018171635008A0A5B /* Build configuration list for PBXProject "THProgressView-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 925EF6FC18171635008A0A5B;
+			productRefGroup = 925EF70618171635008A0A5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				925EF70418171635008A0A5B /* THProgressView-Demo */,
+				925EF72518171635008A0A5B /* THProgressView-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		925EF70318171635008A0A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925EF71318171635008A0A5B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925EF72418171635008A0A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925EF73218171635008A0A5B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		925EF70118171635008A0A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925EF71F18171635008A0A5B /* THViewController.m in Sources */,
+				925EF71918171635008A0A5B /* THAppDelegate.m in Sources */,
+				925EF71518171635008A0A5B /* main.m in Sources */,
+				925EF740181716DA008A0A5B /* THProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		925EF72218171635008A0A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925EF73418171635008A0A5B /* THProgressView_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		925EF72C18171635008A0A5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 925EF70418171635008A0A5B /* THProgressView-Demo */;
+			targetProxy = 925EF72B18171635008A0A5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		925EF71118171635008A0A5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				925EF71218171635008A0A5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		925EF73018171635008A0A5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				925EF73118171635008A0A5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		925EF73518171635008A0A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		925EF73618171635008A0A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		925EF73818171635008A0A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THProgressView-Demo/THProgressView-Demo-Prefix.pch";
+				INFOPLIST_FILE = "THProgressView-Demo/THProgressView-Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		925EF73918171635008A0A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THProgressView-Demo/THProgressView-Demo-Prefix.pch";
+				INFOPLIST_FILE = "THProgressView-Demo/THProgressView-Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		925EF73B18171635008A0A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/THProgressView-Demo.app/THProgressView-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THProgressView-Demo/THProgressView-Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "THProgressView-DemoTests/THProgressView-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		925EF73C18171635008A0A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/THProgressView-Demo.app/THProgressView-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "THProgressView-Demo/THProgressView-Demo-Prefix.pch";
+				INFOPLIST_FILE = "THProgressView-DemoTests/THProgressView-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		925EF70018171635008A0A5B /* Build configuration list for PBXProject "THProgressView-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925EF73518171635008A0A5B /* Debug */,
+				925EF73618171635008A0A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		925EF73718171635008A0A5B /* Build configuration list for PBXNativeTarget "THProgressView-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925EF73818171635008A0A5B /* Debug */,
+				925EF73918171635008A0A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		925EF73A18171635008A0A5B /* Build configuration list for PBXNativeTarget "THProgressView-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925EF73B18171635008A0A5B /* Debug */,
+				925EF73C18171635008A0A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 925EF6FD18171635008A0A5B /* Project object */;
+}
