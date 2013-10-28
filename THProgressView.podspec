@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "THProgressView"
   s.version      = "1.0"
-  s.summary      = "UIView subclass that mimics Twitter for iOS progress bar."
+  s.summary      = "UIView subclass that mimics the progress bar of Twitter for iOS."
   s.homepage     = "https://github.com/tiagomnh/THProgressView"
   s.screenshots  = "https://raw.github.com/tiagomnh/THProgressView/master/Screenshot.png"
 
