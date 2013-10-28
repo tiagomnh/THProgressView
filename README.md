@@ -1,6 +1,6 @@
 # THProgressView
 
-`UIView` subclass that mimics Twitter for iOS progress bar.
+`UIView` subclass that mimics the progress bar of Twitter for iOS
 
 ![Screenshot](Screenshot.png)
 
