@@ -14,7 +14,7 @@ You can also do it manually by dragging the contents of `THProgressView/` into y
 
 ## Usage
 
-`THCircularProgressView` is simply a `UIView` subclass so just instantiate it and add it a view hieararchy.
+`THProgressView` is simply a `UIView` subclass so just instantiate it and add it a view hieararchy.
 
 ```objc
 CGRect rect = ...
