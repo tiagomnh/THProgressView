@@ -6,7 +6,11 @@
 
 ## Installation
 
-Drag the contents of `THProgressView/` into your project.
+The preferred way is through [CocoaPods](http://cocoapods.org/?q=THProgressView). Just add the following line to your Podfile:
+
+`pod 'THProgressView', '~> 1.0'`
+
+You can also do it manually by dragging the contents of `THProgressView/` into your project.
 
 ## Usage
 
