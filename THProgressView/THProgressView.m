@@ -19,6 +19,7 @@ static const CGFloat kBorderWidth = 2.0f;
 @interface THProgressLayer : CALayer
 @property (nonatomic, strong) UIColor* progressTintColor;
 @property (nonatomic, strong) UIColor* borderTintColor;
+@property (nonatomic, strong) UIColor* progressBgColor;
 @property (nonatomic) CGFloat progress;
 @end
 
@@ -26,6 +27,7 @@ static const CGFloat kBorderWidth = 2.0f;
 
 @dynamic progressTintColor;
 @dynamic borderTintColor;
+@dynamic progressBgColor;
 
 + (BOOL)needsDisplayForKey:(NSString *)key
 {
@@ -41,26 +43,56 @@ static const CGFloat kBorderWidth = 2.0f;
     [self drawRectangleInContext:context inRect:rect withRadius:radius];
     CGContextStrokePath(context);
     
-    
     CGContextSetFillColorWithColor(context, self.progressTintColor.CGColor);
     CGRect progressRect = CGRectInset(rect, 2 * kBorderWidth, 2 * kBorderWidth);
     CGFloat progressRadius = CGRectGetHeight(progressRect) / 2.0f;
     progressRect.size.width = fmaxf(self.progress * progressRect.size.width, 2.0f * progressRadius);
     [self drawRectangleInContext:context inRect:progressRect withRadius:progressRadius];
     CGContextFillPath(context);
+    
+    CGContextSetFillColorWithColor(context, self.progressBgColor.CGColor);
+    CGRect progressBgRect = progressRect;
+    progressBgRect.size.width = rect.size.width - 4 * kBorderWidth - progressRect.size.width;
+    progressBgRect.origin.x = progressRect.origin.x + progressRect.size.width;
+    [self drawProgressBgRectangleInContext:context inRect:progressBgRect withRadius:progressRadius];
+    CGContextFillPath(context);
 }
 
 - (void)drawRectangleInContext:(CGContextRef)context inRect:(CGRect)rect withRadius:(CGFloat)radius
 {
+    CGContextBeginPath(context);
     CGContextMoveToPoint(context, rect.origin.x, rect.origin.y + radius);
     CGContextAddLineToPoint(context, rect.origin.x, rect.origin.y + rect.size.height - radius);
     CGContextAddArc(context, rect.origin.x + radius, rect.origin.y + rect.size.height - radius, radius, M_PI, M_PI / 2, 1);
+    
     CGContextAddLineToPoint(context, rect.origin.x + rect.size.width - radius, rect.origin.y + rect.size.height);
     CGContextAddArc(context, rect.origin.x + rect.size.width - radius, rect.origin.y + rect.size.height - radius, radius, M_PI / 2, 0.0f, 1);
+    
     CGContextAddLineToPoint(context, rect.origin.x + rect.size.width, rect.origin.y + radius);
     CGContextAddArc(context, rect.origin.x + rect.size.width - radius, rect.origin.y + radius, radius, 0.0f, -M_PI / 2, 1);
+    
     CGContextAddLineToPoint(context, rect.origin.x + radius, rect.origin.y);
-    CGContextAddArc(context, rect.origin.x + radius, rect.origin.y + radius, radius, -M_PI / 2, M_PI, 1);
+    CGContextAddArc(context, rect.origin.x + radius, rect.origin.y + radius, radius, -M_PI / 2, -M_PI, 1);
+    CGContextClosePath(context);
+}
+
+- (void)drawProgressBgRectangleInContext:(CGContextRef)context inRect:(CGRect)rect withRadius:(CGFloat)radius
+{
+    CGContextBeginPath(context);
+    CGContextMoveToPoint(context, rect.origin.x - radius, rect.origin.y);
+    CGContextAddArc(context, rect.origin.x - radius, rect.origin.y + radius, radius, 3 * M_PI / 2, 2 * M_PI, 0);
+    CGContextAddLineToPoint(context, rect.origin.x, rect.origin.y + rect.size.height - radius);
+    
+    CGContextAddArc(context, rect.origin.x - radius, rect.origin.y + rect.size.height - radius, radius, 0.0f, M_PI / 2, 0);
+    CGContextMoveToPoint(context, rect.origin.x - radius, rect.origin.y + rect.size.height);
+    CGContextAddLineToPoint(context, rect.origin.x + rect.size.width - radius, rect.origin.y + rect.size.height);
+    
+    CGContextAddArc(context, rect.origin.x + rect.size.width - radius, rect.origin.y + rect.size.height - radius, radius, M_PI / 2, 0.0f, 1);
+    CGContextAddLineToPoint(context, rect.origin.x, rect.origin.y + radius);
+    
+    CGContextAddArc(context, rect.origin.x + rect.size.width - radius, rect.origin.y + radius, radius, 2 * M_PI, 3 * M_PI / 2, 1);
+    CGContextAddLineToPoint(context, rect.origin.x - radius, rect.origin.y);
+    CGContextClosePath(context);
 }
 
 @end
@@ -159,6 +191,17 @@ static const CGFloat kBorderWidth = 2.0f;
 - (void)setBorderTintColor:(UIColor *)borderTintColor
 {
     self.progressLayer.borderTintColor = borderTintColor;
+    [self.progressLayer setNeedsDisplay];
+}
+
+- (UIColor *)progressBgColor
+{
+    return self.progressLayer.progressBgColor;
+}
+
+- (void)setProgressBgColor:(UIColor *)bgColor
+{
+    self.progressLayer.progressBgColor = bgColor;
     [self.progressLayer setNeedsDisplay];
 }
 

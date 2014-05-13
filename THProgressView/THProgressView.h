@@ -11,6 +11,7 @@
 
 @property (nonatomic, strong) UIColor* progressTintColor;
 @property (nonatomic, strong) UIColor* borderTintColor;
+@property (nonatomic, strong) UIColor* progressBgColor;
 @property (nonatomic) CGFloat progress;
 
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
