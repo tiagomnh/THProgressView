@@ -36,7 +36,7 @@ static const CGSize progressViewSize = { 200.0f, 30.0f };
                                                                                        progressViewSize.height)];
     topProgressView.borderTintColor = [UIColor whiteColor];
     topProgressView.progressTintColor = [UIColor whiteColor];
-    topProgressView.progressBgColor = [UIColor redColor];
+    topProgressView.progressBackgroundColor = [UIColor redColor];
     [topView addSubview:topProgressView];
     [self.view addSubview:topView];
 
@@ -51,7 +51,7 @@ static const CGSize progressViewSize = { 200.0f, 30.0f };
                                                                                           progressViewSize.height)];
     bottomProgressView.borderTintColor = DEFAULT_BLUE;
     bottomProgressView.progressTintColor = DEFAULT_BLUE;
-    bottomProgressView.progressBgColor = [UIColor greenColor];
+    bottomProgressView.progressBackgroundColor = [UIColor greenColor];
     [bottomView addSubview:bottomProgressView];
     [self.view addSubview:bottomView];
     
