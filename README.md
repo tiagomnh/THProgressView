@@ -28,4 +28,4 @@ The sample project in `/Demo` contains a couple examples.
 
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License) (c) [Tiago Henriques](mailto:tiagomnh@gmail.com)
+THProgressView is available under the MIT license. See the LICENSE file for more info.
